@@ -4,7 +4,6 @@ Este proyecto implementa un sistema de Pregunta-Respuesta (QA) basado en la arqu
 
 Este proyecto está basado en el tutorial oficial de LangChain RAG.
 
-## ⚙️ Arquitectura 
 ## Arquitectura del Sistema
 
 ### 1. **Carga de Contenido**
