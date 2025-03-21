@@ -53,7 +53,7 @@ Para ejecutar este proyecto, necesitarás tener instalado:
 3. Abrir la terminal de GIT (click derecho y seleccionar "Git bash here").
 4. Clonar el repositorio en tu máquina local:lic dere
    ```bash
-   https://github.com/Medina95/LangChain-RAG.git
+   git clone https://github.com/andreec2/TutorialRag.git
 5. Instalar un ambiente virtual de python, para que jupyter notebook pueda correr todas las dependencias
 
 6. Proporcione la API Key en las variables que se encuentran vacias sobre el archivo rag.py
@@ -71,8 +71,6 @@ Para ejecutar este proyecto, necesitarás tener instalado:
 
 5. Finalmente, puedes interactuar con la aplicación  preguntandole  cosas que tengan que ver con el documento https://lilianweng.github.io/posts/2023-06-23-agent/  en la linea `response = rag_chain.invoke({"input": "tu pregunta"})`:  
 
-
-   
 ### Built with
 - [Python](https://www.python.org)
 - [Jupyter](https://jupyter.org/)
