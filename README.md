@@ -1,8 +1,8 @@
 # Taller LangChain RAG 
 
-Este proyecto implementa un sistema de Pregunta-Respuesta (QA) que combina recuperación de información y generación de respuestas. Utiliza una arquitectura conocida como Retrieval-Augmented Generation (RAG) para proporcionar respuestas precisas basadas en  los documentos que le proporcionemos ampliando el conocimieto del LLM. Los pasos principales son: cargar los datos, dividirlos en fragmentos, almacenarlos en un vectorstore, recuperarlos de manera eficiente y luego generar una respuesta usando un modelo de lenguaje potente como GPT-4.
+Este proyecto implementa un sistema de Pregunta-Respuesta (QA) basado en la arquitectura Retrieval-Augmented Generation (RAG). Esta metodología permite generar respuestas precisas combinando recuperación de información y generación de lenguaje natural. Se siguen varios pasos clave: carga de datos, fragmentación del contenido, almacenamiento en una base de datos de vectores, recuperación eficiente de información y generación de respuestas con un modelo avanzado como GPT-4.
 
-Este proyecto implementa el tutorial [LangChain RAG](https://python.langchain.com/docs/tutorials/rag/),
+Este proyecto está basado en el tutorial oficial de LangChain RAG.
 
 ## ⚙️ Arquitectura 
 ## Arquitectura del Sistema
@@ -27,7 +27,8 @@ Este proyecto implementa el tutorial [LangChain RAG](https://python.langchain.co
 ### 5. **Generación de Respuestas**
    - **Componente**: `ChatOpenAI` (GPT-4)
    - **Función**: El modelo de lenguaje (GPT-4) toma los fragmentos relevantes recuperados y genera una respuesta a la consulta utilizando esos fragmentos como contexto. Se utiliza un prompt que guía al modelo para que elabore una respuesta concisa y útil basándose en el   contexto recuperado por ejemplo que responda "don't know" si no sabe la respuesta.
-   - ![image](ReadmeImages/prompt.png)
+  ![image](https://github.com/user-attachments/assets/935b89b2-b4ee-4f9c-8594-6f4a60e7ca9d)
+
 
 
 ### 6. **Formateo**
@@ -57,8 +58,7 @@ Para ejecutar este proyecto, necesitarás tener instalado:
 
 6. Proporcione la API Key en las variables que se encuentran vacias sobre el archivo rag.py
 
-   ![image](ReadmeImages/clave.png)
-
+![image](https://github.com/user-attachments/assets/a07f2326-d3a9-4cb4-8d40-13ed58065ed2)
 
 ### Deployment
 
@@ -71,9 +71,7 @@ Para ejecutar este proyecto, necesitarás tener instalado:
 
 5. Finalmente, puedes interactuar con la aplicación  preguntandole  cosas que tengan que ver con el documento https://lilianweng.github.io/posts/2023-06-23-agent/  en la linea `response = rag_chain.invoke({"input": "tu pregunta"})`:  
 
-   - ![image](ReadmeImages/pregunta%201.png)
-   - ![image](ReadmeImages/pregunta%202.png)
-   - ![image](ReadmeImages/pregunta%203.png)
+
    
 ### Built with
 - [Python](https://www.python.org)
@@ -81,4 +79,4 @@ Para ejecutar este proyecto, necesitarás tener instalado:
 
 ## Authors
 
-* **Carolina Medina Acero** -  [Medina95](https://github.com/Medina95)
+* **Andres Felipe Montes Ortiz** -  [Andreec2](https://github.com/andreec2/TutorialRag)
